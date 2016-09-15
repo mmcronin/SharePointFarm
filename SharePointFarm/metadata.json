@@ -1,0 +1,7 @@
+{
+  "itemDisplayName": "Creates a DC Deployment",
+  "description": "Configures one VM to be an AD DC for a new Forest and Domain, VM has a public facing RDP",
+  "summary": "This template creates an AD Forest",
+  "githubUsername": "mmcronin   ",
+  "dateUpdated": "2016-09-14"
+}
