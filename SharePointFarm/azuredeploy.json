@@ -294,6 +294,7 @@
       "spCAlbID": "[resourceId('Microsoft.Network/loadBalancers',variables('lbSettings').spCALBName)]"
     },
     "lbSettings": {
+      "adLBBE": "adLBBE",
       "rdpLBFE": "rdpLBFE",
       "spWebLBFE": "spWebLBFE",
       "spCALBFE": "spCALBFE",
@@ -471,6 +472,9 @@
           },
           "rdpLBFE": {
             "value": "[variables('lbSettings').rdpLBFE]"
+          },
+          "adLBBE": {
+            "value": "[variables('lbSettings').adLBBE]"
           },
           "RDPNAT": {
             "value": "[variables('RDPNAT')]"

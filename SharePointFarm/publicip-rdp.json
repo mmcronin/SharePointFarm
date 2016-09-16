@@ -14,7 +14,7 @@
     "rdpLBFE": {
       "type": "string"
     },
-    "adBEAddressPoolID": {
+    "adLBBE": {
       "type": "string"
     },
     "RDPNAT": {
@@ -55,7 +55,7 @@
 				],
 				"backendAddressPools": [
           {
-            "name": "[parameters('adBEAddressPoolID')]"
+            "name": "[parameters('adLBBE')]"
 
           }
 				],
