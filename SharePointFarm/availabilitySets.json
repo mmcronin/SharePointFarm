@@ -10,6 +10,12 @@
     },
     "sqlAvailabilitySetName": {
       "type": "string"
+    },
+    "spAppAvailabilitySetName": {
+      "type": "string"
+    },
+    "spWebAvailabilitySetName": {
+      "type": "string"
     }
   },
   "resources": [
@@ -24,7 +30,36 @@
       "location": "[parameters('location')]",
       "name": "[parameters('sqlAvailabilitySetName')]",
       "type": "Microsoft.Compute/availabilitySets"
+    },
+    {
+      "apiVersion": "2015-06-15",
+      "location": "[parameters('location')]",
+      "name": "[parameters('spAppAvailabilitySetName')]",
+      "type": "Microsoft.Compute/availabilitySets"
+    },
+    {
+      "apiVersion": "2015-06-15",
+      "location": "[parameters('location')]",
+      "name": "[parameters('spWebAvailabilitySetName')]",
+      "type": "Microsoft.Compute/availabilitySets"
     }
   ],
-  "outputs": {}
+  "outputs": {
+    "adAvailabilitySetName": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Compute/availabilitySets',parameters('adAvailabilitySetName'))]"
+    },
+    "sqlAvailabilitySetName": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Compute/availabilitySets',parameters('sqlAvailabilitySetName'))]"
+    },
+    "spWebAvailabilitySetName": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Compute/availabilitySets',parameters('spWebAvailabilitySetName'))]"
+    },
+    "spAppAvailabilitySetName": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Compute/availabilitySets',parameters('spAppAvailabilitySetName'))]"
+    }
+  }
 }
