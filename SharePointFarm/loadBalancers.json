@@ -240,15 +240,5 @@
         ]
       }
     }
-  ],
-    "outputs": {
-      "sqllbID": {
-        "value": "[resourceId('Microsoft.Network/loadBalancers',parameters('sqlLBName'))]",
-        "type": "string"
-      },
-      "adlbID": {
-        "value": "[resourceId('Microsoft.Network/loadBalancers',parameters('adLBName'))]",
-        "type": "string"
-      }
-    }
+  ]
   }
