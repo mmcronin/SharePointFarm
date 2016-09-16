@@ -11,17 +11,17 @@
     "rdpLBName": {
       "type": "string"
     },
-    "rdpLBFE" : {
+    "rdpLBFE": {
       "type": "string"
     },
-    "adLBBE" : {
+    "adBEAddressPoolID": {
       "type": "string"
     },
-    "RDPNAT" : {
-      "type" : "string"
+    "RDPNAT": {
+      "type": "string"
     },
-    "rdplbFEConfigID" : {
-      "type" : "string"
+    "rdplbFEConfigID": {
+      "type": "string"
     }
   },
   "resources": [
@@ -54,10 +54,10 @@
 					}
 				],
 				"backendAddressPools": [
-					{
-						"name": "[parameters('adLBBE')]"
+          {
+            "name": "[parameters('adBEAddressPoolID')]"
 
-					}
+          }
 				],
 				"inboundNatRules": [
 					{
