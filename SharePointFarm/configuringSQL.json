@@ -26,7 +26,13 @@
     "sqlServerServiceAccountUserName": {
       "type": "string"
     },
+    "sharePointSetupUserAccountUserName": {
+      "type": "string"
+    },
     "sqlServerServiceAccountPassword": {
+      "type": "securestring"
+    },
+    "sharePointSetupUserAccountPassword": {
       "type": "securestring"
     }
   },
@@ -54,14 +60,19 @@
             "SqlServerServiceAccountcreds": {
               "UserName": "[parameters('sqlServerServiceAccountUserName')]",
               "Password": "PrivateSettingsRef:SqlServerServiceAccountPassword"
+            },
+            "SharePointSetupUserAccountcreds": {
+              "UserName": "[parameters('sharePointSetupUserAccountUserName')]",
+              "Password": "PrivateSettingsRef:SharePointSetupUserAccountPassword"
             }
-           }
+          }
         },
         "protectedSettings": {
           "Items": {
             "AdminPassword": "[parameters('adminPassword')]",
-            "SqlServerServiceAccountPassword": "[parameters('sqlServerServiceAccountPassword')]"
-           }
+            "SqlServerServiceAccountPassword": "[parameters('sqlServerServiceAccountPassword')]",
+            "SharePointSetupUserAccountPassword": "[parameters('sharePointSetupUserAccountPassword')]"
+          }
         }
       }
     }
