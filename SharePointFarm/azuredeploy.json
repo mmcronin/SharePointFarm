@@ -603,7 +603,7 @@
         "Microsoft.Resources/deployments/SettingUpSharepointCentralAdminPublicIP",
         "Microsoft.Resources/deployments/SettingUpSharepointWebPublicIP",
         "Microsoft.Resources/deployments/SettingUpRdp",
-        "Microsoft.Resources/deployments/CreatingVirtualNetwork"
+        "Microsoft.Resources/deployments/SettingUpVirtualNetwork"
       ],
       "properties": {
         "mode": "Incremental",
