@@ -334,12 +334,6 @@
         }
       },
       {
-        "name": "[variables('sqlSubnetName')]",
-        "properties": {
-          "addressPrefix": "[parameters('sqlSubnet')]"
-        }
-      },
-      {
         "name": "[variables('spAppSubnetName')]",
         "properties": {
           "addressPrefix": "[parameters('spAppSubnet')]"
